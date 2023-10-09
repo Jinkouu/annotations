@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annotations in narrative visualization</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+          .hide1 { display: none; }
+    
+       
+    
+.hoverme1:hover + .hide1 {
+  display: block;
+  color: red;
+}
+        </style>
+      </head>
+      <body id="top">
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#recommendations">Recommendations <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#conclusion">Conclusion <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">ANNOTATIONS IN NARRATIVE VISUALIZATION</span></h1>
+                  <p class="animated fadeInUp delay-05s">This is a framework for annotation recommendations for different audiences in narrative visualization. By <strong>Jonathan Nguyen</strong></p>
+                </div>
+              </div>
+           
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">In what ways are annotations integrated into narrative visualization?</h1>
+                <p>Narrative visualization otherwise known as data-stoytelling, is an important communication medium that is used to spread information such as COVID-19 advice.
+                Audience is not given enough thought when developing narrative visualization, which is problematic, especially when it is used to convey important information.
+                </p>
+                <p>
+                In this work I study one element of narrative visualization to find out how it can be better used for a specific audience. I have chosen annotations because they are very important when explaining information to readers and vary greatly between narrative visualization. For the purposes of this work, annotations are any text that explains information ina  narrative visualization.
+                </p>
+                <p>
+        Below is a collection of examples of narrative visualization annotations that I have found in real-world examples.
+                For each example I have recommended usage advice which focuses on audience type.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="recommendations text-center section-padding" id="recommendations">
+          <div class="container">
+            <div class="row">
+              
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Recommendations</h1>
+                
+                <h2>1. Highly Interactive</h2>
+                <img src="img/screenshot-1.jpg" width="100%"/><p>Screenshot - 1</p>
+                 <h3><a href="https://pudding.cool/2023/06/asterisks/">The CRUTCH Rankings on The Pudding</a>
+                </h3>
+              <p>The Pudding is a website that cater towards a primarily 18-24 year old demographic (<a href="https://www.similarweb.com/website/pudding.cool/#demographics">Similar Web</a>)</p>
+              <p>In this example it uses highly interactive rollovers as annotations in narrative visualization (see screenshot - 1). Only when the content is rolled over does the annotation appear. It appears directly above the content item</p>
+     
+              <p><em>Recommendation</em></p>    
+                <p>Use only for 18-24 audience</p>
+                <p>Use only for information that is not necessary to comprehend information</p>
+                <p>DO NOT use for audience with low visual literacy</p>
+              </ul>
+              <p>See working example:<br>
+                  <button id="myButton">Rollover for highly interactive annotation</button>
+              </p>
+                 <p>&nbsp;</p>
+                 <h2>2. Moderately Interactive</h2>
+                <img src="img/screenshot-2.jpg" width="100%"/><p>Screenshot - 2</p>
+                 <h3><a href="https://whydocatsanddogs.com/dogs">Why do cats & dogs ...? Nadieh Bremer</a>
+                </h3>
+              <p>Explanation here</p>
+              <p>In this example it uses moderately interactive rollovers as annotations in narrative visualization (see screenshot - 2).
+              Only when the content is rolled over does the annotation appear.
+              It appears always in the top right hand corner.</p>
+     
+              <p><em>Recommendation</em></p>    
+                <p>Use only for under 30 audience</p>
+            
+              
+              </ul>
+              <p>See working example:<br>
+                  <p class="hoverme1">Rollover for moderately interactive annotation</p>
+                  <div class="hide1">annotation example</div>
+                <p>&nbsp;</p>
+                 <h2>3. No Interactivity</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero eget urna eleifend vestibulum. Nunc urna enim, feugiat eget orci eu, dapibus ultricies velit. Donec id ipsum semper, blandit ante id, lacinia dolor. Curabitur ut aliquet massa, non porttitor elit. Nam ac quam at diam consectetur fermentum. Mauris sit amet ultricies ligula, sit amet eleifend diam. Donec iaculis tempor nunc, eu semper sem sagittis at. Ut semper fringilla ante quis aliquam. Ut sem ligula, mollis blandit nunc eu, varius aliquet metus. Morbi non pretium nulla.
+                 </p>
+                 <p>
+Aliquam erat volutpat. Mauris at turpis id libero accumsan elementum vitae at est. Vestibulum tempor velit risus, nec tristique augue tempus sit amet. Sed mollis nisl nulla, eu sodales est rutrum in. Nulla sodales arcu dolor, id finibus orci varius a. Donec scelerisque tincidunt scelerisque. Integer eget maximus libero</p>
+               
+                 <p>&nbsp;</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+  <section class="conclusion text-center section-padding" id="conclusion">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Conclusion</h1>
+                <p>This work has recommendation annotation usage for narrative visualization. Any questions please email:<a href="mailto:jonathan.nguyen-3@student.uts.edu.au">Jonathan Nguyen</a> </p>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+        <footer>
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-6 credit">
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('#myButton', {
+        content: 'annotation example',
+         animation: 'scale',
+          arrow: false,
+      });
+    </script>
+      </body>
+    </html>
