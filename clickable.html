@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annotations in narrative visualization</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Sacramento&display=swap" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+          .hide1 { display: none; }
+    
+       
+    
+.hoverme1:hover + .hide1 {
+  display: block;
+  color: red;
+}
+        </style>
+      </head>
+      <body id="top">
+        <!-- Navbar-->
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="index.html#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="index.html#overview">Overview <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="interactive.html#recommendations">Recommendations <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#conclusion">Conclusion <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Title -->
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">ANNOTATIONS IN NARRATIVE VISUALIZATION</span></h1>
+                  <p class="animated fadeInUp delay-05s">This is a framework for annotation recommendations for different audiences in narrative visualization. By <strong>Jonathan Nguyen</strong></p>
+                </div>
+              </div>
+           
+            </div>
+          </section>
+        </header>
+
+        <section class="recommendations text-center section-padding" id="recommendations">
+          <div class="container">
+            <div class="row">
+              
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Recommendations</h1>
+                
+                <h2>1. Small Clickable Area</h2>
+                <img src="img/clickable-1.PNG" width="100%"/><p>Screenshot - 1</p>
+                <h3><a href="https://projects.propublica.org/extinctions/">A Disappearing Planet</a></h3>
+                <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
+
+
+                <p>In this example, the visualisation utilises a large dataset containing hoverable elements for annotations to appear. 
+                    The elements are made smaller in size to reduce the clutter on screen.
+                    
+                </p>
+                <p><em>Recommendation</em></p>    
+                <p>Contain options to increase hoverable areas through a slider</p>
+                <p>Only used for audiences with high dexterity and precision</p>
+                <p>DO NOT use for audience declining motor skill issues</p>
+                </ul>
+                <p>See working example:<br>
+                    <button id="myButton"></button>
+                </p>
+                 <p>&nbsp;</p>
+
+                 <h2>2. Large Clickable Area</h2>
+                 <img src="img/Clickable-2.PNG" width="80%"/><p>Screenshot - 2</p>
+                  <h3><a href="https://whydocatsanddogs.com/dogs">A Disappearing Planet</a>
+                 </h3>
+               <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
+
+                <p>In this example, the visualisation utilises a universal help symbol that when hovered over, produces the annotation.
+                    It always appears on the right of the symbol. Its large size increases the accessibility towards those with less
+                    precise motor skills.
+                    
+               <p><em>Recommendation</em></p>    
+                 <p>Use for a wider audience</p>
+                 <p>MUST use when targeting an audience with reduces motor skills</p>
+             
+               
+               </ul>
+               <p>See working example:<br>
+                    <button class="clickable" id="myButton">Hover over me</button>
+                 <p>&nbsp;</p>
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+  <section class="conclusion text-center section-padding" id="conclusion">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Conclusion</h1>
+                <p>This work has recommended annotation usage for narrative visualization.<br>
+                  Any questions please email:<a href="mailto:jonathan.nguyen-3@student.uts.edu.au"> Jonathan Nguyen</a> </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <a href="#hero"><button type="button" class="return"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+          <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg></button></a>
+        <a href="index.html#hero"><button type="button" class="return-home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg></button></a>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-6 credit">
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('#myButton', {
+        content: 'annotation example',
+        animation: 'scale',
+        arrow: false,
+      });
+    </script>
+      </body>
+    </html>
