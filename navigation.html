@@ -78,46 +78,81 @@
             <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">Recommendations</h1>
                 
-                <h2>1. Small Clickable Area</h2>
-                <img src="img/clickable-1.PNG" width="100%"/><p>Screenshot - 1</p>
-                <h3><a href="https://projects.propublica.org/extinctions/">A Disappearing Planet</a></h3>
-                <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
-
-
-                <p>In this example, the visualisation utilises a large dataset containing hoverable elements for annotations to appear. 
-                    The elements are made smaller in size to reduce the clutter on screen.
-                    
+                <h2>1. Click Anywhere</h2>
+                <p>See working example:<br>
+                    <div class="popup">Click me to toggle the popup!
+                        <span class="popuptext">A Simple Popup!</span>
+                      </div>
+                </p>
+            
+                <p>In this example, the annotation is triggered by a popup. 
+                    This popup can appear through loading the webpage, scrolling to the section containing the popup, or clicking on a prompt that opens the popup. 
+                    Once the annotation pops up, the user can click anywhere on screen, closing the popup.
                 </p>
                 <p><em>Recommendation</em></p>    
-                <p>Contain options to increase hoverable areas through a slider</p>
-                <p>Only used for audiences with high dexterity and precision</p>
-                <p>DO NOT use for audience declining motor skill issues</p>
-                </ul>
-                <p>See working example:<br>
-                    <button id="myButton"></button>
-                </p>
+                <p>Use for a younger audience (less than 24 years old) for intuitive use</p>
+                <p>Use for long annotations where other navigation buttons would be inconvenient to click</p>
+                <p>DO NOT use for a senior audience OR use alongside explicit navigation options</p>
+
                  <p>&nbsp;</p>
 
-                 <h2>2. Large Clickable Area</h2>
-                 <img src="img/Clickable-2.PNG" width="80%"/><p>Screenshot - 2</p>
+                 <h2>2. Swipe</h2>
+                 <div class = "child" >
+                    SWIPE TO CLOSE
+                  </div>
+
+                <p>In this example, the annotation is triggered by a popup. 
+                    This popup can appear through loading the webpage, scrolling to the section containing the popup, or clicking on a prompt that opens the popup. 
+                    Once the annotation pops up, the user can swipe the annotation away, closing the popup.
+                    <p><em>Recommendation</em></p>    
+                 <p>Use for mobile narrative visualisations</p>
+                 <p>DO NOT use for a senior audience OR use alongside explicit navigation options</p>
+               <p>&nbsp;</p>
+                
+               <h2>3. Hover</h2>
+                 <img src="img/Clickable-2.PNG" width="80%"/><p>Screenshot - 1</p>
                   <h3><a href="https://projects.propublica.org/extinctions/">A Disappearing Planet</a>
                  </h3>
                <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
-
                 <p>In this example, the visualisation utilises a universal help symbol that when hovered over, produces the annotation.
-                    It always appears on the right of the symbol. Its large size increases the accessibility towards those with less
-                    precise motor skills.
-                    
+                    It always appears on the right of the symbol. The annotation disappears when the cursor is off the symbol.
                <p><em>Recommendation</em></p>    
                  <p>Use for a wider audience</p>
+                 <p>Use ONLY for web-based narrative visualisations</p>
                  <p>MUST use when targeting an audience with reduced motor skills</p>
-             
-               
-               </ul>
+                 <p>DO NOT use for a senior audience</p>
                <p>See working example:<br>
                     <button class="clickable" id="myButton">Hover over me</button>
                  <p>&nbsp;</p>
+
+                 <h2>4. Click</h2>
+                 <img src="img/Navigation.PNG" width="50%"/><p>Screenshot - 1</p>
+                  <h3><a href="https://projects.propublica.org/extinctions/">A Disappearing Planet</a>
+                 </h3>
+               <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
+                <p>In this example, the annotation is triggered by a popup. 
+                    This popup can appear through loading the webpage, scrolling to the section containing the popup, or clicking on a prompt that opens the popup. 
+                    Once the annotation pops up, the user can click the 'x' symbol on the top right, closing the popup.
+               <p><em>Recommendation</em></p>    
+                 <p>Use for a wider audience</p>
+                 <p>MUST use when targeting an audience with low visual literacy</p>
+                 <p>MUST use for a senior audience</p>
+               <p>See working example:<br>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Annotation</button>
+                            
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
                 
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                
+                </div>
+                 <p>&nbsp;</p> 
+
               </div>
             </div>
             </div>
@@ -172,5 +207,102 @@
         arrow: false,
       });
     </script>
+
+    <script>
+        const popups = [...document.getElementsByClassName('popup')];
+
+        window.addEventListener('click', ({ target }) => {
+          const popup = target.closest('.popup');
+          const clickedOnClosedPopup = popup && !popup.classList.contains('show');
+        
+          popups.forEach(p => p.classList.remove('show'));
+        
+          if (clickedOnClosedPopup) popup.classList.add('show');  
+        });
+    </script>
+
+    <script>
+        const toasts = document.getElementsByClassName('child');
+        for(i=0 ; i<toasts.length ; i++) {
+          const elem = document.getElementsByClassName('child')[i];
+          var initialpos =0;
+          var finalpos =0;
+          const initialleft = elem.style.left;
+          const threshold = 100;
+          var remove = false;
+        
+          function reset(event){
+            drag=false;
+            initialpos =0;
+            finalpos =0;
+            elem.style.transform = 'none';
+            elem.style.opacity = 1;
+            if(remove) event.target.parentNode.removeChild(event.target);
+          }
+
+          function init(event){
+
+            let touch = event.touches && event.touches[0];
+            drag = true; 
+            initialpos = event.clientX || touch.pageX;
+            console.log(" -- init --",initialpos);
+          }
+
+          function update(event){
+            if(drag){
+             console.log(" -- move -- ");
+             let touch = event.touches && event.touches[0];
+             finalpos = event.clientX || touch.pageX;
+             const moved = finalpos-initialpos;
+             console.log(" -- moved dist -- ",finalpos,initialpos,moved);
+             elem.style.transform = `translateX(${moved}px)`;
+             const opacityValue = 1 - Math.pow((Math.abs(moved)/100),5)
+             elem.style.opacity = opacityValue;
+             remove = false
+             if(Math.abs(moved) >= threshold){
+               remove = true;
+             }
+            }
+          }
+
+          elem.addEventListener('mousedown',init);
+          elem.addEventListener('mousemove',update);
+          elem.addEventListener('mouseup',reset);
+          elem.addEventListener('mouseleave',reset);
+          elem.addEventListener('touchstart', init);
+          elem.addEventListener('touchmove', update);
+          elem.addEventListener('touchend', reset);
+        }
+
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+            
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+            
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+
       </body>
     </html>
