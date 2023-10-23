@@ -78,46 +78,55 @@
             <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">Recommendations</h1>
                 
-                <h2>1. Small Clickable Area</h2>
-                <img src="img/clickable-1.PNG" width="100%"/><p>Screenshot - 1</p>
-                <h3><a href="https://projects.propublica.org/extinctions/">A Disappearing Planet</a></h3>
-                <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
+                <h2>1. Parallax Scrolling</h2>
+                <img src="img/animation.PNG" width="100%"/><p>Screenshot - 1</p>
+                <h3><a href="https://www.washingtonpost.com/nation/interactive/2023/ar-15-damage-to-human-body/">AR-15: The Blast Effect</a></h3>
+                <p>The Washington Post is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/washingtonpost.com/#demographics">Similar Web</a>)</p>
 
 
-                <p>In this example, the visualisation utilises a large dataset containing hoverable elements for annotations to appear. 
-                    The elements are made smaller in size to reduce the clutter on screen.
+                <p>In this example, the visualisation utilises an annotation that appears and travels upwards on screen depending on the user's scroll input. It appears on the left of the visualisation.
                     
                 </p>
                 <p><em>Recommendation</em></p>    
-                <p>Contain options to increase hoverable areas through a slider</p>
-                <p>Only used for audiences with high dexterity and precision</p>
-                <p>DO NOT use for audience declining motor skill issues</p>
+                <p>Use to increase immersion into the storytelling.</p>
+                <p>Use to reduce complex data by linearly guiding the user through the data at their own pace</p>
+                <p>DO NOT use for audiences with motor or cognitive impairments</p>
+                <p>Requires extensive testing when website performance and cross-compatibility is prioritised</p>
                 </ul>
                 <p>See working example:<br>
-                    <button id="myButton"></button>
+                    <div class="parallax"></div>
+
+                    <div class="col-md-12 col-md-offset-0 wp1 parallax-helpr">
+                        <div class="col-md-5 col-md-offset-1 wp1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero eget urna eleifend vestibulum. Nunc urna enim, feugiat eget orci eu, dapibus ultricies velit. Donec id ipsum semper, blandit ante id, lacinia dolor. Curabitur ut aliquet massa, non porttitor elit. Nam ac quam at diam consectetur fermentum. Mauris sit amet ultricies ligula, sit amet eleifend diam. Donec iaculis tempor nunc, eu semper sem sagittis at. Ut semper fringilla ante quis aliquam. Ut sem ligula, mollis blandit nunc eu, varius aliquet metus. Morbi non pretium nulla.
+                        </div>  
+                    </div>
+                     
+
+
                 </p>
                  <p>&nbsp;</p>
 
-                 <h2>2. Large Clickable Area</h2>
-                 <img src="img/Clickable-2.PNG" width="80%"/><p>Screenshot - 2</p>
-                  <h3><a href="https://whydocatsanddogs.com/dogs">A Disappearing Planet</a>
+                 <h2>2. Animation</h2>
+                 <img src="https://krisztinaszucs.com/blog/20220829_gif/img/fencing/SabreFinalW-1.gif" width="80%"/><p>Screenshot - 2</p>
+                  <h3><a href="https://krisztinaszucs.com/blog/20220829_gif/index.html">Animated sport results</a>
                  </h3>
-               <p>The Propublica is a website that cater towards all audiences with a senior audience (age 55-64) demographic being the largest demographic. (<a href="https://www.similarweb.com/website/propublica.org/#traffic">Similar Web</a>)</p>
-
-                <p>In this example, the visualisation utilises a universal help symbol that when hovered over, produces the annotation.
-                    It always appears on the right of the symbol. Its large size increases the accessibility towards those with less
-                    precise motor skills.
+                <p>In this example, the visualisation appears into the screen as the teams score a goal. Whilst not directly an annotation, the heading for the current segment follows along the animation, containing implications for actual animated annotation usage.
                     
                <p><em>Recommendation</em></p>    
-                 <p>Use for a wider audience</p>
-                 <p>MUST use when targeting an audience with reduced motor skills</p>
+                 <p>Use for a younger audience (less than 24 years old)</p>
+                 <p>Use to increase user engagement</p>
+                 <p>DO NOT use for audience with low visual literacy</p>
+                 <p></p>
              
                
                </ul>
                <p>See working example:<br>
-                    <button class="clickable" id="myButton">Hover over me</button>
+                <button id="startAnimation">Start animation</button>
+                    <div id="rotate">
+                        Content to be animated. This can be edited to appear on scroll.
+                    </div>
                  <p>&nbsp;</p>
-                
               </div>
             </div>
             </div>
@@ -171,6 +180,18 @@
         animation: 'scale',
         arrow: false,
       });
+    </script>
+    <script>
+        const element = document.getElementById('rotate');
+        const startButton = document.getElementById('startAnimation');
+
+        startButton.addEventListener('click', function () {
+          element.classList.add('rotate-center');
+          element.addEventListener('animationend', function () {
+            element.classList.remove('rotate-center');
+      	}, {once: true});
+      });
+
     </script>
       </body>
     </html>
