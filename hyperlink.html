@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annotations in narrative visualization</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Sacramento&display=swap" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+          .hide1 { display: none; }
+    
+       
+    
+.hoverme1:hover + .hide1 {
+  display: block;
+  color: red;
+}
+        </style>
+      </head>
+      <body id="top">
+        <!-- Navbar-->
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="index.html#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="index.html#overview">Overview <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="interactive.html#recommendations">Recommendations <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#conclusion">Conclusion <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Title -->
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">ANNOTATIONS IN NARRATIVE VISUALIZATION</span></h1>
+                  <p class="animated fadeInUp delay-05s">This is a framework for annotation recommendations for different audiences in narrative visualization. By <strong>Jonathan Nguyen</strong></p>
+                </div>
+              </div>
+           
+            </div>
+          </section>
+        </header>
+
+        <section class="recommendations text-center section-padding" id="recommendations">
+          <div class="container">
+            <div class="row">
+              
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Recommendations</h1>
+                
+                <h2>1. Image Hyperlinks</h2>
+                <img src="img/screenshot-2.jpg" width="100%"/><p>Screenshot - 1</p>
+                <h3><a href="https://whydocatsanddogs.com/cats">Why do cats & dogs ...? Nadieh Bremer</a></h3>
+
+                <p>In this example it uses moderately interactive rollovers as annotations in narrative visualization (see screenshot - 1).
+                    Only when the content is rolled over does the annotation appear.
+                    It appears always in the top left hand corner. When hovered over, the cursor turns into a pointer, indicating a clickable element.
+                    When clicked, it leads to a google search of the hovered content.</p> 
+                    
+                </p>
+                <p><em>Recommendation</em></p>    
+                <p>Use only for under 30 audience</p>
+                <p>Consider making hyperlinks open a new page, rather than replace the current page</p>
+                <p>DO NOT use for senior audience as it may overwhelm the user due to a different layout</p>
+                </ul>
+                <p>See working example:<br>
+                    <button id="myButton-2"><a href="https://google.com" target="_blank"><img src="img/iphone-bg.png" width="30%"></a></button>
+                </p>
+                 <p>&nbsp;</p>
+
+                 <h2>2. Footnote Hyperlinks</h2>
+                 <img src="img/hyperlink-2.PNG" width="80%"/><p>Screenshot - 2</p>
+                 <h3><a href="https://www.abc.net.au/news/2022-11-16/cost-of-living-personal-rate-of-inflation/101326768">What’s your personal rate of inflation?</a>
+                 </h3>
+                 <p>The abc is a website that cater towards all audiences with a particular skew towards an older generation with 45-65+ making up 43.08% of users (<a href="https://www.similarweb.com/website/abc.net.au/#geography">Similar Web</a>)</p>
+                
+                 <p>In this example, the visualisation utilises a footnote hyperlink at the bottom hand corner. When hovered over, the cursor turns into a pointer, indicating a clickable element.
+                    When clicked, it leads to the data source of the visualisation. This encourages trust and confidence placed behind the presented information.
+                    It also enables further exploration into the data outside of the visualisations shown.</p>
+                    
+               <p><em>Recommendation</em></p>    
+                 <p>Use for an audience older than 18 years old</p>
+                 <p>Consider making hyperlinks open a new page, rather than replace the current page</p>
+                 <p>MUST use when targeting an audience with an academic background</p>
+             
+               
+               </ul>
+               <p>See working example:<br>
+                <img src="img/hyperlink-4.PNG" width="70%">
+                <p>This visualisation contains information regarding COVID-19 data / <a href="https://www.tableau.com/covid-19-coronavirus-data-resources" target="_blank">Graph Source</a> / <a href="https://github.com/nytimes/covid-19-data" target="_blank">Data source</a></p>
+                 <p>&nbsp;</p>
+
+
+                 <h2>3. Text Hyperlinks</h2>
+                 <img src="img/hyperlink-3.PNG" width="70%"/><p>Screenshot - 3</p>
+                 <h3><a href="https://pudding.cool/2019/03/hype/">How many high school stars make it in the NBA?</a>
+                 </h3>
+                 <p>The Pudding is a website that cater towards a primarily 18-24 year old demographic (<a href="https://www.similarweb.com/website/pudding.cool/#demographics">Similar Web</a>)</p>
+                
+                 <p>In this example, the narrative visualisation utilises an annotation at the very bottom regarding visualisation creation methodology and source.
+                    The hyperlink is underlined. When hovered over, the cursor turns into a pointer, indicating a clickable element.
+                    When clicked, it leads to the data source of the visualisation. An underline and/or bolding of text is often utilised to distinguish between content text and hyperlinked text.
+                    This works alongside a visual scheme to make a more unique and uniform website aesthetic.
+                 </p>
+                    
+               <p><em>Recommendation</em></p>    
+                 <p>Use for an audience older than 18 years old</p>
+                 <p>Consider making hyperlinks open a new page, rather than replace the current page</p>
+                 <p>Consider underlining the hyperlink when targeting a low internet literacy demographic</p>
+             
+               
+               </ul>
+               <p>See working example:<br>
+                <p><a class="hyperlink-1">No Underline</a></p>
+                <p><a class="hyperlink-2">Underline</a></p>
+                 <p>&nbsp;</p>
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+  <section class="conclusion text-center section-padding" id="conclusion">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Conclusion</h1>
+                <p>This work has recommended annotation usage for narrative visualization.<br>
+                  Any questions please email:<a href="mailto:jonathan.nguyen-3@student.uts.edu.au"> Jonathan Nguyen</a> </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <a href="#hero"><button type="button" class="return"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+          <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg></button></a>
+        <a href="index.html#hero"><button type="button" class="return-home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg></button></a>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-6 credit">
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('#myButton-2', {
+        content: 'hyperlink example',
+        animation: 'scale',
+        arrow: false,
+      });
+    </script>
+      </body>
+    </html>

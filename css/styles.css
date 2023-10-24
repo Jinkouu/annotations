@@ -699,5 +699,23 @@ navigation page
   cursor: pointer;
 }
  /* ==========================================================================
-indicator page
+hyperlink page
 ========================================================================== */
+#myButton-2{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border:none;
+  box-shadow: none;
+}
+.hyperlink-1:hover{
+  cursor: pointer;
+  color:#6d7688;
+}
+.hyperlink-2{
+
+  text-decoration: underline;
+}
+.hyperlink-2:hover{
+  cursor: pointer;
+  color:#6d7688;
+}
